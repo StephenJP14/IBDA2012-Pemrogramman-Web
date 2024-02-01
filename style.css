@@ -15,18 +15,22 @@ form{
     gap: 2rem;
 }
 
-input{
+#text-input{
     border: none;
     outline: none;
+    width: 85%;
+    /* background-color: aqua; */
+    border-radius: 20px;
+    margin-left: 1rem;
 }
 
 div{
     display: flex;
     /* justify-content: space-around; */
-    gap : 10rem;
     align-items: center;
+    gap : 1vw;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 20px;
     width: 35%;
     height: 5vh;
 }

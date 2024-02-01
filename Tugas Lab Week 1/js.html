@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            background-color: aquamarine;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 1rem;
+            height: 100vh;
+        }
+
+        #flags{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #flags-button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="flags">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/255px-Flag_of_Indonesia.svg.png" alt="" id="flag" style="width: 200px; height: 100px;">
+    </div>
+
+    <div id="flags-button">
+        <button id="Indonesia">Indonesia</button>
+        <button id="USA">The USA</button>
+        <button id="UK">The UK</button>
+    </div>
+
+
+
+    <script>
+        const image = document.getElementById('flag')
+        const Indonesia = document.getElementById('Indonesia');
+        const USA = document.getElementById('USA');
+        const UK = document.getElementById('UK');
+        
+        Indonesia.addEventListener('click', () => {
+            image.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/255px-Flag_of_Indonesia.svg.png";
+            image.style.width = "200px";
+            image.style.height = "100px";
+        })
+
+        USA.addEventListener('click', () => {
+            image.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Flag_of_the_United_States_%281877%E2%80%931890%29.svg/2560px-Flag_of_the_United_States_%281877%E2%80%931890%29.svg.png";
+            image.style.width = "200px";
+            image.style.height = "100px";
+        })
+
+        UK.addEventListener('click', () =>{
+            image.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/1200px-Flag_of_the_United_Kingdom_%281-2%29.svg.png";
+            image.style.width = "200px";
+            image.style.height = "100px";
+        })
+
+    </script>
+
+
+</body>
+</html>
